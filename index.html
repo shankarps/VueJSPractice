@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <!-- Declaratively render this data -->
+            {{ message }}
+        </div>
+        
+        <div id="app-2">
+            <!-- Here we have a directive. it binds the title of the element to "message" var -->
+            <span v-bind:title="message">
+              Hover your mouse over me for a few seconds
+              to see my dynamically bound title!
+            </span>
+          </div>
+
+        <div id="app-3">
+            <!-- v-if checks for a boolean variable -->
+            <span v-if="seen"> Visible text</span>
+        </div>  
+
+        <div id="app-4">
+            <ol>
+                <!-- v-for iterates a list with the same element-->
+                <li v-for="todo in todos">
+                    {{todo.text}}
+                </li>
+            </ol>
+            <table>
+                <tbody>
+                <tr v-for="todo in todos">
+                    <td>
+                        {{todo.text}}
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div id="app-5">
+            <p>{{message}}</p>
+            <button v-on:click="toUpperCase">Convert to Upper case</button>
+            <button v-on:click="toLowerCase">Convert to Lower case</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
