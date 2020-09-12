@@ -45,3 +45,34 @@ var app5 = new Vue({
     
     }
 });
+
+var app6 = new Vue({
+    el:"#app-6",
+    data:{
+        message:"V-Model message"
+    }
+});
+
+//Define a Vue custom component
+
+Vue.component('todo-item', {
+    //This component accepts props.
+    props:['todo'],
+    //component's template evaluates the code
+    template:'<li>{{todo.text}}</li>'
+});
+
+var app7 = new Vue(
+    {
+        el:"#app-7",
+        data:{
+            todoList:[
+                {id:0, text:"First item"},
+                {id:1, text:"Second item"},
+                {id:2, text:'Third item'}
+            ]
+        }
+    }
+);
+
+

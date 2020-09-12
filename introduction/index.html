@@ -46,6 +46,24 @@
             <button v-on:click="toUpperCase">Convert to Upper case</button>
             <button v-on:click="toLowerCase">Convert to Lower case</button>
         </div>
+
+        <div id="app-6">
+            <p>{{message}}</p>
+            <input v-model="message"/>
+
+        </div>
+
+        <!-- Use a custom Vue component -->
+        <div id="app-7">
+            <ol>
+                <!-- Pass the item as a prop to the todo-item custom component -->
+                <todo-item v-for="item in todoList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+                </todo-item>
+            </ol>
+        </div>
+
         <script src="index.js"></script>
     </body>
 </html>
