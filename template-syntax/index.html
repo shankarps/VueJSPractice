@@ -9,6 +9,10 @@
             <!-- Declaratively render this data -->
             Display with moustache syntax: {{ html }}
             <p>Display with v-html directive <div v-html="html"></div></p>
+            <div v-bind:id="customId">This DIV has ID set by v-bind {{customId}}</div>
+            <button v-bind:disabled="isButtonDisabled">Button disabled with isButtonDisabled prop  {{isButtonDisabled}}</button>
+            <div>Increment the number {{number }} in props by 1 with moustache syntax: {{ number + 1 }}</div>
+            <p v-if="display">This eleent is displayed after v-if checked for True.</p>
         </div>
         
         <script src="index.js"></script>
