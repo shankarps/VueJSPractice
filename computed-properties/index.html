@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>      
+        <div id="example">
+            <p>Original Message: "{{message}}"</p>
+            <p>Reversed message: "{{reversedMessage}}"</p>
+            <p>Doubled message (with in built method): "{{doubleMessage()}}"</p>
+        </div>
+        <div id="example-1">
+            <input v-model="fullName"/>
+            <p>First Name (auto computed): {{firstName}}</p>
+            <p>Last Name (auto computed): {{lastName}} </p>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
