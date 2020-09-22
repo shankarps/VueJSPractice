@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>      
+        <div id="example">
+            <p>displayDivTag has a valid value :{{displayDivTag}}</p>
+            <div v-if="displayDivTag">
+                Displayed.
+            </div>
+            <p>displayH3Tag has value :{{displayH3Tag}}. So the next Header is not displayed.</p>
+            Enter a header text to be displayed: <input v-model="displayH3Tag"/>
+            <h3 v-if="displayH3Tag">{{displayH3Tag}}</h3>
+            <h3 v-else>Header is empty!</h3>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

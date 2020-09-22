@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>      
+        <div id="example">
+            <div v-bind:style="{color:divColor, fontSize:fontSize}">
+                This div has the font color set by the value in the following text box {{divColor}}
+            </div>
+            <input v-model="divColor"/>
+            <br>
+            <br>
+            <input v-model="fontSize"/>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

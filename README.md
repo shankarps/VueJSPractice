@@ -11,7 +11,9 @@ The project is organized into subfolders. There is a subfolder for each section 
 2. ./vue-instance (Vue Instance - https://vuejs.org/v2/guide/instance.html)
 3. ./template-syntax (Template Syntax - https://vuejs.org/v2/guide/syntax.html)
 4. ./computed-properties (Computed Properties and Watchers - https://vuejs.org/v2/guide/computed.html)
-
+5. ./class-bindings (Class and style bindings - https://vuejs.org/v2/guide/class-and-style.html)
+6. ./conditional-rendering (Conditional Rendering - https://vuejs.org/v2/guide/conditional.html)
+7. ./list-rendering (List Rendering - https://vuejs.org/v2/guide/list.html)
 
 ### V-directives
 
