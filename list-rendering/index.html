@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>        
+        <div id="app-1">
+            <div v-for="(item, index) in items" :key="item.message">
+                  {{index}} {{ item.message }}
+            </div>
+            <button v-on:click="addToList">Add Element</button>
+        </div>        
+        <script src="index.js"></script>
+    </body>
+</html>
